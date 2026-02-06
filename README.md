@@ -2,13 +2,13 @@
 
 
 **DATE:**
-
+06-02-2026
 **NAME:**
-
+VIVIN MATHEW.V
 **ROLL NO:**
-
+212224040367
 **DEPARTMENT:**
-
+CSE
 ## Aim
 
 To Interface a Digital output (LED) to ARM IOT development board and write a program to blink an LED.
@@ -99,10 +99,36 @@ With its power-efficient design, built-in LoRaWAN support, and flexible communic
 ## STM 32 CUBE PROGRAM
 
 ```
-// Your STM 32 CUBE Program code here
+#include "main.h"
+
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+
+  while (1)
+  {
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+    HAL_Delay(2500);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+    HAL_Delay(2500);
+  }
+}
+
+
+
 ```
 
 ## OUTPUT
+OBJECT DETECTED
+![WhatsApp Image 2026-02-06 at 11 37 29 AM](https://github.com/user-attachments/assets/1ffb97b8-dd44-4d75-b806-a702fe1fae1c)
+
+OBJECT NOT DETECTED
+![WhatsApp Image 2026-02-06 at 11 37 30 AM (1)](https://github.com/user-attachments/assets/1bd55798-ccdb-4b35-83b1-c8f32bc215a9)
 
 ## Result
 
