@@ -124,10 +124,10 @@ int main(void)
 ```
 
 ## OUTPUT
-OBJECT DETECTED
+OBJECT NOT DETECTED
 ![WhatsApp Image 2026-02-06 at 11 37 29 AM](https://github.com/user-attachments/assets/1ffb97b8-dd44-4d75-b806-a702fe1fae1c)
 
-OBJECT NOT DETECTED
+OBJECT DETECTED
 ![WhatsApp Image 2026-02-06 at 11 37 30 AM (1)](https://github.com/user-attachments/assets/1bd55798-ccdb-4b35-83b1-c8f32bc215a9)
 
 ## Result
